@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500&display=swap' );
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');  
+:root {
+
+    --cor-1--: darkblue;
+    --cor-2--: #b9d7ea;
+    --cor-3--: aliceblue;
+    --cor-4--: #492e87;
+    --cor-5--: #201658;
+
+    --font-family-1--: 'Poppins', sans-serif;
+    --font-family-2--: 'Mont Serrat', sans-serif;
+    --font-family-3--: 'Cerdarville Cursive', Cursive;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: var(--cor-3--);
+    width: 100vw;
+    height: 100vh;
+}
+
+main.container{   
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 93vh;
+}
+
+
+.logo{
+    margin: auto;
+}
+.texto{
+    position: absolute;
+    width: 42vw;
+    height: 58vh;
+    left: 12%;
+    top: 10%;
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    box-shadow: 0.9rem 0.6rem 1rem -0.2rem var(--cor-1--);
+    font-family: var(--font-family-1--);
+    font-style: normal;
+    font-weight: 400;
+    color: var(--cor-5--);
+    font-size: 2rem;
+    line-height: 120%;
+    text-transform: lowercase;
+    background-color: transparent;
+    
+}
+.texto::placeholder{
+    opacity: 0.4;
+    font-family: var(--font-family-1--);
+    color: var(--cor-1--);
+}
+.texto:focus, .texto:active{
+    border: none;
+    outline: none;
+}
+.alerta{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    color: var(--cor-5--);
+    padding: 0%;
+    gap: 0.5rem;
+    width: 80%;
+    left: 12%;
+    top: 75%;
+
+}
+
+.alerta p{
+    line-height: 100%;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    font-family: var(--font-family-1--);
+    opacity: 0.8;
+    order: 1;
+    flex-grow: 0;
+
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 11%;
+    top: 77%;
+    gap: 3%;
+}
+.btn-criptografar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 0.5rem;
+    width: 25%;
+    background-color: var(--cor-1--);
+    border-radius: 1.5rem;
+    font-family: var(--font-family-2--);
+    font-size: 1.2rem;
+    line-height:1.2rem;
+    text-align: center;
+    box-shadow: 0rem 0.8rem 1rem -0.2rem var(--cor-5--);
+    color: var(--cor-2--);
+
+}
+.btn-descriptografar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 0,5rem;
+    width: 25%;
+    background-color: var(--cor-3--);
+    border: 3px solid var(--cor-1--);
+    border-radius: 1.5rem;
+    font-family: var(--font-family-2--);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    box-shadow: 0rem 0.8rem 1rem -0.2rem var(--cor-5--);
+    color: var(--cor-1--);
+}
+.btn-criptografar:hover ,
+.btn-descriptografar:hover{
+    margin: 0.5%;
+    width: 24.5%;
+    padding: 1.7%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.texto_criptografado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 32vw;
+    height: 74vh;
+    left: 61%;
+    top: 5%;
+    background: var(--cor-2--);
+    box-shadow: 0rem 1.5rem 2rem -0.2rem var(--cor-5--);
+    border-radius: 2rem;
+}
+.imagem{
+    position: absolute;
+    align-items: center;
+    opacity: 0.8;
+    width: 21vw;
+    top: 8%;
+    left: 30%;
+}
+.mensagem-criptografada{
+    display: flex;
+    position: relative;
+    flex-direction:column;
+    align-items:center;
+    padding: 10%;
+    gap: 5rem;
+    width: 70vw;
+    height: 42vh;
+    top: 40%;
+}
+.mensagem-criptografada h2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 16vh;
+    font-family: var(--font-family-1--);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 120%;
+    opacity: 0.5;
+    color: var(--cor-1--); 
+    padding-bottom: 8%;
+
+}
+.mensagem-criptografada p{
+    display: flex;
+    width: auto;
+    font-family: var(--font-family-1--);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 100%;
+    text-align: center;
+    opacity: 0.6;
+    color: var(--cor-1--) ;
+    padding-top: 2%;
+
+}
+.btn-copiar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9%;
+    top: 80%;
+    background-color: var(--cor-3--);
+    border: 2px solid var(--cor-top1--);
+    border-radius: 1.5rem;
+    font-family: var(--font-family-2--);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    box-shadow: 0rem 0.8rem 1rem -0.2rem var(--cor-5--);
+    color: var(--cor-1--);
+    width: 75%;
+    height: 1.2rem;
+}
+.btn-copiar:hover{
+    width: 73%;
+    height: 1rem;
+    margin: 0.2%;
+    padding: 8%;
+    background-color: var(--cor-4--);
+    color: var(--cor-3--);
+    transition: 0.6s;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+
+}
+
+.rodape{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    bottom: 4%;
+    left: 38%;
+    font-size: 1.3rem;
+    font-family: var(--font-family-2--);
+    gap: 5%;
+}
+.rodape h3{
+    font-family: var(--font-family-3--);
+    font-weight: 300;
+    color: var(--cor-4--);
+    order: 1;
+}
+.rodape a{
+    color: var(--cor-1--);
+    font-weight: 400;
+}
+.rodape a:hover{
+    color: var(--cor-2--);
+}
+
+ 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon_cadeado16px.png" type="image/x-icon" />
+        <title>Decodificador de Textos</title>   
+</head>
+
+<body>
+
+    <main class="container">
+
+    <header class="header">
+        
+            <img class="logo" src="./assets/logo1.png" alt="logo da Alura" />
+        
+    </header><!--header-->
+
+        <section class="criptografia_texto">
+
+            <textarea class="texto" 
+                name="texto" 
+                id="texto" 
+                cols="20" rows="10" 
+                placeholder="digite o texto aqui:"></textarea>
+            
+
+        <div class="alerta">
+                <p> Atenção: Somente letras minusculas e sem acento!</p>
+        </div><!--alerta-->
+
+        <div class="buttons">
+            <button class="btn-criptografar" type="button" value="criptografar" onclick="criptografar()">Criptografar</button>
+            <input class="btn-descriptografar" type="button" value="descriptografar" onclick="descriptografar()"/>
+        </div><!--button-->
+        
+    </section><!--criptografia_texto-->
+
+        <section class="texto_criptografado">
+            <div class="imagem" >
+            <img src="./assets/investigador200.png" id="imagem" alt="rapaz com uma lupa" >
+            </div><!--imagem-->
+            <div class="mensagem-criptografada" id="mensagem-criptografada">
+                <h2 id="titulo-mensagem">Nenhuma mensagem<br>encontrada.</br></h2>
+                <p id="paragrafo">Retornar: Texto Criptografado ou Descriptografado.</p>
+   
+            </div><!--mensagem-criptografada-->
+
+        <!--   <textarea class="resultado" name="resultado"
+            id="resultado"
+            cols="20" rows="10" 
+            placeholder="digite o texto aqui:"></textarea>
+
+        -->
+            
+        </section><!--texto_criptografado-->
+
+    <footer class="footer">
+        <div class="rodape" >
+            <h3 id="">Criado por Alexandre de Paiva</h3>
+            <img src="assets/icons8-github-30.png" alt="icone GitHub">
+            <a href="https://github.com/AlexandrePSDEV">GitHub</a>
+            <img src="assets/icons8-linkedin-24.png" alt="icone Linkedin">
+            <a href="https://www.linkedin.com/in/alexandre-de-paiva-souza-a29ab9266/?originalSubdomain=br">Linkedin</a>
+        </div><!--rodape-->
+    </footer><!--footer-->
+
+</main><!--container-->
+
+
+</body>
+    <script src="script.js"></script>
+</html>
