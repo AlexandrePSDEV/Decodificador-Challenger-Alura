@@ -1,3 +1,3 @@
-Este projeto com alteração do original proposto ! 
-No original o texto da Criptografia e o texto descriptografado seria copiado através do click em um botão copiar,
-não achei essa funcionalidade tão prática assim resolvi coloca apenas informções no final do processo !
+Este projeto foi elaborado com alteração do projeto original proposto ! 
+No original o texto a ser criptografado ou descriptografado seria copiado na área de trasnferência através do click em um botão copiar,
+não achei essa funcionalidade tão prática, dessa forma resolvi colocar apenas felicitações e orientações(alerta)  na conclusão do processo !
